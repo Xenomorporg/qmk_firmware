@@ -18,6 +18,8 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000/innsmouth_prototype/`.
 
+For hosted PR preview environments, open the repository-root `index.html` and follow the demo link, or navigate directly to `/innsmouth_prototype/index.html`.
+
 ## Controls
 - Move: `WASD` / arrow keys
 - Dash toward cursor: `Space`
