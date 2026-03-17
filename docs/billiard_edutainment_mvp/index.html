@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billiard Edutainment MVP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header>
+        <h1>Billiard Edutainment MVP</h1>
+        <p>Statyczne animowane diagramy + quizy (bez realistycznej fizyki)</p>
+      </header>
+
+      <section class="panel table-panel">
+        <div class="toolbar">
+          <button id="prev-frame">◀ Poprzednia klatka</button>
+          <button id="next-frame">Następna klatka ▶</button>
+          <button id="play-scene">Odtwórz scenę</button>
+          <span id="frame-caption"></span>
+        </div>
+        <svg id="table" viewBox="0 0 1000 500" aria-label="Diagram stołu bilardowego"></svg>
+      </section>
+
+      <section class="panel info-panel">
+        <h2 id="scene-title"></h2>
+        <p id="coach-text"></p>
+
+        <div id="quiz-box">
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-answers"></div>
+          <p id="quiz-feedback"></p>
+        </div>
+
+        <div class="progress">
+          <h3>Postęp sesji</h3>
+          <p>XP: <strong id="xp-value">0</strong></p>
+          <p>Streak: <strong id="streak-value">0</strong></p>
+          <button id="next-scene">Następna scena</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
